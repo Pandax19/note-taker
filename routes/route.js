@@ -2,7 +2,7 @@ const uuid = require("../helpers/utils");
 const express = require("express");
 const fs = require("fs");
 const router = express.Router();
-
+const { readFromFile, readAndAppend } = require('../helpers/fsUtils');
 
 
 router.post('/notes', (req, res) => {
